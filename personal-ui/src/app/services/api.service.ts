@@ -3,14 +3,14 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 @Injectable({
-    providedIn: 'root',
+  providedIn: 'root',
 })
 export class ApiService {
-    private apiUrl = 'http://localhost:5116/api';
+  private apiUrl = 'https://localhost:5001/api';
 
-    constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) {}
 
-    getBlogs(): Observable<any> {
-        return this.http.get(`${this.apiUrl}/blog`);
-    }
+  getBlogs(): Observable<any> {
+    return this.http.get(`${this.apiUrl}/blogs`);
+  }
 }
