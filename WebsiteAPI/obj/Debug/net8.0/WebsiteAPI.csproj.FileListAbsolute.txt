@@ -159,3 +159,4 @@
 /Users/kyaaqba/repo/iamkaram/WebsiteAPI/obj/Debug/net8.0/ref/WebsiteAPI.dll
 /Users/kyaaqba/repo/iamkaram/WebsiteAPI/bin/Debug/net8.0/package-lock.json
 /Users/kyaaqba/repo/iamkaram/WebsiteAPI/bin/Debug/net8.0/package.json
+/Users/kyaaqba/repo/iamkaram/WebsiteAPI/obj/Debug/net8.0/WebsiteAPI.sourcelink.json

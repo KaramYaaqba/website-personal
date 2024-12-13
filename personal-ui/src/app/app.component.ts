@@ -1,13 +1,22 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { LeftPaneComponent } from './layout/left-pane/left-pane.component';
+import { TopNavComponent } from './layout/top-nav/top-nav.component';
+import { RightPaneComponent } from './layout/right-pane/right-pane.component';
+
 
 @Component({
-  selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [
+    CommonModule,
+    RouterOutlet,
+    RightPaneComponent,
+    LeftPaneComponent,
+    TopNavComponent,
+  ],
+  selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-  title = 'personal-ui';
-}
+export class AppComponent {}

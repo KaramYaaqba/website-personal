@@ -1,37 +1,11 @@
-<div class="app-container">
-  <!-- Top Navigation Menu -->
-  <nav class="top-menu">
-    <div class="menu-links">
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
-
-  <!-- Main Content -->
-  <div class="main-content">
-    <!-- Left Section: Image -->
-    <div class="profile-section">
-      <img
-        src="../assets/profile.jpeg"
-        alt="Your Name"
-        class="profile-image"
-      />
-    </div>
-
-    <!-- Right Section: Technologies -->
-    <div class="technologies-section">
-      <h2>Technologies I Use</h2>
-      <div class="tech-grid">
-        <div class="tech-item">Angular</div>
-        <div class="tech-item">.NET</div>
-        <div class="tech-item">SQLite</div>
-        <div class="tech-item">TypeScript</div>
-        <div class="tech-item">HTML</div>
-        <div class="tech-item">CSS</div>
-        <div class="tech-item">JavaScript</div>
-        <div class="tech-item">Azure</div>
-      </div>
-    </div>
-  </div>
+<div class="layout-container">
+  <aside class="left-column">
+    <app-left-pane></app-left-pane>
+  </aside>
+  <main class="right-column">
+    <app-top-nav></app-top-nav>
+    <app-right-pane>
+      <router-outlet></router-outlet>
+    </app-right-pane>
+  </main>
 </div>
