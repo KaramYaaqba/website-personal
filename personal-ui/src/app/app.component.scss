@@ -1,21 +1,26 @@
+/* Set up the layout container */
 .layout-container {
   display: flex;
-  height: 100vh; // adjust as needed
+  height: 100vh; /* Full height of the viewport */
+  overflow: hidden;
 }
 
+/* Style the left column */
 .left-column {
-  width: 25%;
-  background: #f4f4f4; // your preferred background
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2rem;
+  width: 250px; /* Set a fixed width for the left column */
+  position: fixed; /* Make the left column stay in place */
+  top: 0;
+  left: 0;
+  bottom: 0; /* Occupy the full height */
+  background-color: #f4f4f4; /* Example background color */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Optional shadow for aesthetics */
+  z-index: 1; /* Ensure it stays on top of the right side content */
 }
 
+/* Style the right column */
 .right-column {
-  width: 75%;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  padding: 2rem;
+  margin-left: 250px; /* Leave space for the fixed left column */
+  flex: 1; /* Take up remaining space */
+  overflow-y: auto; /* Enable vertical scrolling on the right column */
+  background-color: #fff; /* Example background color */
 }
