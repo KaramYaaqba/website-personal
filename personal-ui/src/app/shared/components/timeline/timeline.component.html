@@ -1,10 +1,21 @@
-<div class="timeline">
-  <div *ngFor='let entry of timeLine;let i = index'>
-    <div class="container" [ngClass]="{ left: i%2!==0, right:i%2==0}">
-      <div class="content">
-        <h2>{{entry.year}}</h2>
-        <p>{{entry.detail}}</p>
+<section>
+  <h2>Work Experience</h2>
+  <ol class="timeline">
+    <li
+      *ngFor="let item of timelineData"
+      [ngClass]="{
+        company: item.type === 'company',
+        role: item.type === 'role',
+        current: item.current
+      }"
+    >
+      <div *ngIf="item.type === 'company'">
+        <h3>{{ item.companyName }}</h3>
       </div>
-    </div>
-  </div>
-</div>
+      <div class="title">{{ item.title }}</div>
+      <div>
+        <p>{{ item.description }}</p>
+      </div>
+    </li>
+  </ol>
+</section>
