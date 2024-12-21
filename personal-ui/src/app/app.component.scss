@@ -1,26 +1,51 @@
-/* Set up the layout container */
-.layout-container {
+/* app.component.css */
+
+.container {
   display: flex;
-  height: 100vh; /* Full height of the viewport */
-  overflow: hidden;
+  height: 100vh; /* ensure it spans the full height of the viewport */
 }
 
-/* Style the left column */
-.left-column {
-  width: 250px; /* Set a fixed width for the left column */
-  position: fixed; /* Make the left column stay in place */
-  top: 0;
-  left: 0;
-  bottom: 0; /* Occupy the full height */
-  background-color: #f4f4f4; /* Example background color */
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Optional shadow for aesthetics */
-  z-index: 1; /* Ensure it stays on top of the right side content */
+/* --- Sidebar (Left) --- */
+.sidebar {
+  width: 30vw;
+  /* Make it fixed so it doesn’t scroll with the content */
+  position: sticky;
+  top: 0; /* This, combined with sticky, fixes it to the top */
+  height: 100vh;
+  overflow: hidden; /* No scrolling on the sidebar itself */
+  background-color: #f8f8f8;
+  border-right: 1px solid #ccc;
+  padding: 1rem;
 }
 
-/* Style the right column */
-.right-column {
-  margin-left: 250px; /* Leave space for the fixed left column */
-  flex: 1; /* Take up remaining space */
-  overflow-y: auto; /* Enable vertical scrolling on the right column */
-  background-color: #fff; /* Example background color */
+.sidebar .profile {
+  margin-bottom: 2rem;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  margin: 0.5rem 0;
+  cursor: pointer;
+}
+
+.sidebar nav ul li.active {
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* --- Main Content (Right) --- */
+.main-content {
+  flex: 1;
+  padding: 1rem 2rem;
+  overflow-y: auto; /* main content is scrollable */
+}
+
+/* Just for demo spacing */
+.section {
+  margin: 2rem 0;
+  border-bottom: 1px solid #ccc;
 }

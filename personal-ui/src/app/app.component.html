@@ -1,11 +1,50 @@
-<div class="layout-container">
-  <aside class="left-column">
-    <app-left-pane></app-left-pane>
+<!-- app.component.html -->
+<div class="container">
+  <!-- Left Sidebar -->
+  <aside class="sidebar">
+    <div class="profile">
+      <h2>Karam Yaaqba</h2>
+      <p>Software Engineer</p>
+    </div>
+    <nav>
+      <ul>
+        <li
+          (click)="scrollToSection('about')"
+          [class.active]="activeSection === 'about'"
+        >
+          About
+        </li>
+        <li
+          (click)="scrollToSection('experience')"
+          [class.active]="activeSection === 'experience'"
+        >
+          Experience
+        </li>
+        <li
+          (click)="scrollToSection('projects')"
+          [class.active]="activeSection === 'projects'"
+        >
+          Projects
+        </li>
+      </ul>
+    </nav>
   </aside>
-  <main class="right-column">
-    <app-top-nav></app-top-nav>
-    <app-right-pane>
-      <router-outlet></router-outlet>
-    </app-right-pane>
+
+  <!-- Right Content -->
+  <main class="main-content">
+    <section id="about" class="section" #aboutSection>
+      <h2>About</h2>
+      <app-intro></app-intro>
+    </section>
+
+    <section id="experience" class="section" #experienceSection>
+      <h2>Experience</h2>
+      <app-about></app-about>
+    </section>
+
+    <section id="projects" class="section" #projectsSection>
+      <h2>Projects</h2>
+      <app-projects></app-projects>
+    </section>
   </main>
 </div>

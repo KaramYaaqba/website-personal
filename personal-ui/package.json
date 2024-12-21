@@ -24,7 +24,7 @@
     "@angular/router": "^18.2.0",
     "@angular/ssr": "^18.2.9",
     "express": "^4.18.2",
-    "ng-medium": "^0.0.6",
+    "intersection-observer": "^0.12.2",
     "ngx-timeline": "^5.0.0",
     "primeicons": "^7.0.0",
     "primeng": "^18.0.0",
