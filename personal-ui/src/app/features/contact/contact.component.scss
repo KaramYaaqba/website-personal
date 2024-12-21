@@ -1,0 +1,32 @@
+.medium-feed {
+    font-family: Arial, sans-serif;
+  }
+  
+  .medium-feed h2 {
+    font-size: 1.5em;
+  }
+  
+  .medium-feed ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .medium-feed li {
+    margin-bottom: 1.5em;
+  }
+  
+  .medium-feed a {
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .medium-feed a:hover {
+    text-decoration: underline;
+  }
+  
+  .medium-feed .error-message {
+    color: red;
+    font-weight: bold;
+  }
+  

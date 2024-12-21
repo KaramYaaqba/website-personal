@@ -1,0 +1,11 @@
+<h2 mat-dialog-title>Project Details</h2>
+<mat-dialog-content>
+  <p><strong>Company:</strong> {{ data.company }}</p>
+  <p><strong>Stack:</strong> {{ data.stack }}</p>
+  <p><strong>Role:</strong> {{ data.role }}</p>
+  <p><strong>Business Perspective:</strong> {{ data.businessPerspective }}</p>
+  <p><strong>Technical Perspective:</strong> {{ data.technicalPerspective }}</p>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button (click)="closeDialog()">Close</button>
+</mat-dialog-actions>
