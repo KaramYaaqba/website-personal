@@ -2,6 +2,11 @@
 <div class="container">
   <!-- Left Sidebar -->
   <aside class="sidebar">
+    <div class="sidebar-space">
+    </div>
+    <div class="sidebar-space">
+    </div>
+
     <div class="profile">
       <h2>Karam Yaaqba</h2>
       <p>Software Engineer</p>
@@ -28,17 +33,35 @@
         </li>
       </ul>
     </nav>
+    <div class="sidebar-space">
+    </div>
+    <div class="sidebar-space">
+      <div class="links-container">
+        <a href="https://github.com/KaramYaaqba" target="_blank">
+          <img src="assets/images/github.png" alt="Link 1" />
+        </a>
+        <a href="https://www.linkedin.com/in/karamyaaqba/" target="_blank">
+          <img src="assets/images/linkedin.png" alt="Link 2" />
+        </a>
+        <a href="mailto:kyaaqba@gmail.com" target="_blank">
+          <img src="assets/images/email.png" alt="Link 3" />
+        </a>
+      </div>
+      
+    </div>
   </aside>
 
   <!-- Right Content -->
   <main class="main-content">
+    <div class="sidebar-space">
+    </div>
     <section id="about" class="section" #aboutSection>
-      <h2>About</h2>
       <app-intro></app-intro>
     </section>
-
+    <div class="sidebar-space">
+    </div>
     <section id="experience" class="section" #experienceSection>
-      <h2>Experience</h2>
+      <h2>My Journy</h2>
       <app-about></app-about>
     </section>
 
@@ -48,3 +71,4 @@
     </section>
   </main>
 </div>
+<div class="spotlight" [ngStyle]="spotlightStyle"></div>

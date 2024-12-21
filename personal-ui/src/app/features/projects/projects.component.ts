@@ -74,7 +74,7 @@ export class ProjectsComponent {
       technicalPerspective:
         'I developed a Python solution using Apache Spark on Azure Databricks to parse ONIX files, convert the data into JSON format, and store it in CosmosDB. The front-end solution, built with .NET and Angular, provides an intuitive search interface. I also implemented an Azure Logic App workflow to process incoming ONIX files automatically, ensuring the database remains updated and ready for the sales team to use.'
     }
-  ];
+  ].reverse();
 
   constructor(private dialog: MatDialog) {}
 

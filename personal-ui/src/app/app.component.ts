@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, Inject, PLATFORM_ID, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, HostListener, Inject, PLATFORM_ID, Renderer2, ViewChild } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { LeftPaneComponent } from './layout/left-pane/left-pane.component';
@@ -29,7 +29,9 @@ import { IntroComponent } from './features/intro/intro.component';
 })
 
 export class AppComponent implements AfterViewInit {
-  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+  constructor(@Inject(PLATFORM_ID, ) private platformId: Object, 
+                private renderer: Renderer2, 
+                private el: ElementRef) {}
 
   activeSection: string = 'about';
 
@@ -108,7 +110,26 @@ export class AppComponent implements AfterViewInit {
       console.warn('Section or container not found:', sectionId, mainContent);
     }
   }
-  
+
+  spotlightStyle = {
+    left: '0px',
+    top: '0px',
+    display: 'none'
+  };
+
+  @HostListener('mousemove', ['$event'])
+  onMouseMove(event: MouseEvent) {
+    this.spotlightStyle = {
+      left: `${event.clientX}px`,
+      top: `${event.clientY}px`,
+      display: 'block'
+    };
+  }
+
+  @HostListener('mouseleave')
+  onMouseLeave() {
+    this.spotlightStyle.display = 'none';
+  }
   
   
 }
