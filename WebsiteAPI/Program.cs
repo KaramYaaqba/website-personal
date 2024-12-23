@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using WebsiteAPI.Data;
 using WebsiteAPI.Models;
+using Microsoft.AspNetCore.SpaServices;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,8 +9,17 @@ var builder = WebApplication.CreateBuilder(args);
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddSpaStaticFiles(configuration =>
+{
+    configuration.RootPath = "browser";
+});
+builder.Services.AddCors(options => options.AddPolicy("CorsPolicy",
+        builder => builder
+        .AllowAnyMethod()
+        .AllowAnyHeader()));
 builder.Services.AddDbContext<MyDbContext>(options =>
     options.UseSqlite("Data Source=app.db"));
+
 
 var app = builder.Build();
 
@@ -20,7 +30,19 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseStaticFiles();
+app.UseSpaStaticFiles();
+
+app.UseRouting();
+app.UseCors("CorsPolicy");
+
 app.UseHttpsRedirection();
+
+app.UseSpa(spa =>
+{
+    spa.Options.SourcePath = "browser";
+});
+
 
 var summaries = new[]
 {

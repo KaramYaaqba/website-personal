@@ -4,10 +4,8 @@
       *ngFor="let item of timelineData"
       [ngClass]="{
         company: item.type === 'company',
-        role: item.type === 'role',
-        current: item.current
-      }"
-    >
+        role: item.type === 'role'
+      }">
       <div *ngIf="item.type === 'company'">
         <h3>{{ item.companyName }}</h3>
       </div>

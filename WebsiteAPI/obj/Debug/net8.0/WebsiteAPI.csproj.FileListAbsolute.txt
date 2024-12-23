@@ -160,3 +160,14 @@
 /Users/kyaaqba/repo/iamkaram/WebsiteAPI/bin/Debug/net8.0/package-lock.json
 /Users/kyaaqba/repo/iamkaram/WebsiteAPI/bin/Debug/net8.0/package.json
 /Users/kyaaqba/repo/iamkaram/WebsiteAPI/obj/Debug/net8.0/WebsiteAPI.sourcelink.json
+/Users/kyaaqba/repo/iamkaram/WebsiteAPI/bin/Debug/net8.0/publish/web.config
+/Users/kyaaqba/repo/iamkaram/WebsiteAPI/bin/Debug/net8.0/publish/appsettings.Development.json
+/Users/kyaaqba/repo/iamkaram/WebsiteAPI/bin/Debug/net8.0/publish/appsettings.json
+/Users/kyaaqba/repo/iamkaram/WebsiteAPI/bin/Debug/net8.0/publish/package-lock.json
+/Users/kyaaqba/repo/iamkaram/WebsiteAPI/bin/Debug/net8.0/publish/package.json
+/Users/kyaaqba/repo/iamkaram/WebsiteAPI/bin/Debug/net8.0/publish/WebsiteAPI.deps.json
+/Users/kyaaqba/repo/iamkaram/WebsiteAPI/bin/Debug/net8.0/publish/WebsiteAPI.runtimeconfig.json
+/Users/kyaaqba/repo/iamkaram/WebsiteAPI/bin/Debug/net8.0/Microsoft.AspNetCore.Server.Kestrel.Https.dll
+/Users/kyaaqba/repo/iamkaram/WebsiteAPI/bin/Debug/net8.0/Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.dll
+/Users/kyaaqba/repo/iamkaram/WebsiteAPI/bin/Debug/net8.0/Microsoft.AspNetCore.SpaServices.Extensions.dll
+/Users/kyaaqba/repo/iamkaram/WebsiteAPI/bin/Debug/net8.0/Newtonsoft.Json.dll

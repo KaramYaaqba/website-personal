@@ -41,6 +41,7 @@ export class AppComponent implements AfterViewInit {
   @ViewChild('projectsSection') projectsSection!: ElementRef<HTMLElement>;
 
   private observer!: IntersectionObserver;
+  email: string = 'kyaaqba@gmail.com';
 
   ngAfterViewInit() {
     if (isPlatformBrowser(this.platformId)) {
@@ -129,6 +130,14 @@ export class AppComponent implements AfterViewInit {
   @HostListener('mouseleave')
   onMouseLeave() {
     this.spotlightStyle.display = 'none';
+  }
+
+  downloadResume() {
+      const link = document.createElement('a');
+      link.href = 'assets/files/resume.pdf';
+      link.download = 'KaramYaaqba-Resume.pdf';
+      link.click();
+      link.remove();
   }
   
   
