@@ -4,13 +4,15 @@
     width: 100vw;
     background-image: url('/assets/images/desk.png'); /* Replace with the actual image path */
     background-size: cover;
-    background-position: center;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent tiling */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: white;
     position: relative;
+    margin-top: 60px;
   }
   
   /* Optional overlay for better text readability */

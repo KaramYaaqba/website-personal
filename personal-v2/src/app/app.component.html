@@ -1,4 +1,4 @@
-<div>
+<div class="main-content">
   <header>
     <nav>
       <div class="logo">
@@ -11,7 +11,7 @@
       </div>
       <ul [class.active]="menuActive" class="nav-links">
         <li><a (click)="scrollToSection('about')">About</a></li>
-        <li><a (click)="scrollToSection('projects')">Projects</a></li>
+        <li><a (click)="scrollToSection('projects')">Experience</a></li>
         <li><a (click)="scrollToSection('contact')">Contact</a></li>
       </ul>
     </nav>
@@ -25,12 +25,10 @@
       <app-about></app-about>
     </section>
     <section id="projects" class="full-height">
-      <h2>Projects</h2>
-      <p>Here are some of my projects...</p>
+      <app-experience></app-experience>
     </section>
     <section id="contact" class="full-height">
-      <h2>Contact</h2>
-      <p>Get in touch with me...</p>
+      <app-contact></app-contact>
     </section>
   </main>
   
