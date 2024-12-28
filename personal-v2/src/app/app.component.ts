@@ -16,11 +16,16 @@ import { RouterOutlet } from '@angular/router';
   ],
 })
 export class AppComponent {
-  title = 'personal-v2';
+  title = 'I am Karam';
+  menuActive: boolean = false;
   scrollToSection(sectionId: string): void {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
+  }
+
+  toggleMenu() {
+    this.menuActive = !this.menuActive;
   }
 }

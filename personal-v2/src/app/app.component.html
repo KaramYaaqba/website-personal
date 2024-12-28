@@ -1,9 +1,14 @@
 <header>
   <nav>
     <div class="logo">
-      <a (click)="scrollToSection('home')">My Portfolio</a>
+      <a (click)="scrollToSection('home')">Karam Yaaqba</a>
     </div>
-    <ul class="nav-links">
+    <div class="burger-menu" (click)="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul [class.active]="menuActive" class="nav-links">
       <li><a (click)="scrollToSection('about')">About</a></li>
       <li><a (click)="scrollToSection('projects')">Projects</a></li>
       <li><a (click)="scrollToSection('contact')">Contact</a></li>
