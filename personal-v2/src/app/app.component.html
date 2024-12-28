@@ -1,35 +1,37 @@
-<header>
-  <nav>
-    <div class="logo">
-      <a (click)="scrollToSection('home')">Karam Yaaqba</a>
-    </div>
-    <div class="burger-menu" (click)="toggleMenu()">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-    <ul [class.active]="menuActive" class="nav-links">
-      <li><a (click)="scrollToSection('about')">About</a></li>
-      <li><a (click)="scrollToSection('projects')">Projects</a></li>
-      <li><a (click)="scrollToSection('contact')">Contact</a></li>
-    </ul>
-  </nav>
-</header>
-
-<main>
-  <section id="home" class="full-height">
-    <h1>Welcome to My Portfolio</h1>
-  </section>
-  <section id="about" class="full-height">
-    <h2>About Me</h2>
-    <p>I'm a passionate developer...</p>
-  </section>
-  <section id="projects" class="full-height">
-    <h2>Projects</h2>
-    <p>Here are some of my projects...</p>
-  </section>
-  <section id="contact" class="full-height">
-    <h2>Contact</h2>
-    <p>Get in touch with me...</p>
-  </section>
-</main>
+<div>
+  <header>
+    <nav>
+      <div class="logo">
+        <a (click)="scrollToSection('home')">Karam Yaaqba</a>
+      </div>
+      <div class="burger-menu" (click)="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul [class.active]="menuActive" class="nav-links">
+        <li><a (click)="scrollToSection('about')">About</a></li>
+        <li><a (click)="scrollToSection('projects')">Projects</a></li>
+        <li><a (click)="scrollToSection('contact')">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="home" class="full-height">
+      <app-home></app-home>
+    </section>
+    <section id="about" class="full-height">
+      <app-about></app-about>
+    </section>
+    <section id="projects" class="full-height">
+      <h2>Projects</h2>
+      <p>Here are some of my projects...</p>
+    </section>
+    <section id="contact" class="full-height">
+      <h2>Contact</h2>
+      <p>Get in touch with me...</p>
+    </section>
+  </main>
+  
+</div>
