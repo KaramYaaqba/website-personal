@@ -20,7 +20,7 @@ export class TimelineComponent {
     {
       type: 'company',
       companyName: 'Microsoft',
-      title: 'Could Software Engineer',
+      title: 'Cloud Software Engineer',
       description: `In my role as a Cloud Software Engineer, I developed and implemented innovative solutions to optimize operations and improve client satisfaction. I designed and built software to automate latency tracking for AirJaldi's routers in India, leveraging C# and Azure Cosmos DB, resulting in a 20% increase in client satisfaction. For eKitabu, I automated server provisioning and deployment processes using HashiCorp Terraform on Azure, eliminating manual effort and reducing server deployment time from one week to just a few hours. My work focused on delivering scalable, efficient, and automated solutions to address critical operational challenges. These contributions enhanced overall system performance and streamlined workflows for both organizations.`
     },
     {
