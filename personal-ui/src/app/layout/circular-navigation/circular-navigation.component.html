@@ -1,0 +1,14 @@
+<div class="menu-container" [class.show-menu]="isHovered" (mouseenter)="isHovered = true" (mouseleave)="isHovered = false">
+    <img src="assets/images/ufo.png" class="profile-image" alt="Profile">
+    <div class="menu-items" *ngIf="isHovered">
+      <button class="menu-item edit" (click)="openLink()">
+        <i class="fas fa-edit"></i>
+      </button>
+      <button class="menu-item delete">
+        <i class="fas fa-trash"></i>
+      </button>
+      <button class="menu-item settings">
+        <i class="fas fa-cog"></i>
+      </button>
+    </div>
+  </div>

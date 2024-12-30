@@ -9,10 +9,12 @@ import { ProjectsComponent } from './features/projects/projects.component';
 import { ContactComponent } from './features/contact/contact.component';
 import 'intersection-observer';
 import { IntroComponent } from './features/intro/intro.component';
+import { CircularNavigationComponent } from './layout/circular-navigation/circular-navigation.component';
 
 @Component({
   standalone: true,
   imports: [
+    CircularNavigationComponent,
     AboutComponent,
     IntroComponent,
     ProjectsComponent,
