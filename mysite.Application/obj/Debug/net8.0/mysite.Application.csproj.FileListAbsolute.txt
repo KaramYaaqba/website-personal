@@ -1,0 +1,16 @@
+/Users/kyaaqba/repo/iamkaram/mysite.Application/bin/Debug/net8.0/mysite.Application.deps.json
+/Users/kyaaqba/repo/iamkaram/mysite.Application/bin/Debug/net8.0/mysite.Application.dll
+/Users/kyaaqba/repo/iamkaram/mysite.Application/bin/Debug/net8.0/mysite.Application.pdb
+/Users/kyaaqba/repo/iamkaram/mysite.Application/bin/Debug/net8.0/mysite.Core.dll
+/Users/kyaaqba/repo/iamkaram/mysite.Application/bin/Debug/net8.0/mysite.Core.pdb
+/Users/kyaaqba/repo/iamkaram/mysite.Application/obj/Debug/net8.0/mysite.Application.csproj.AssemblyReference.cache
+/Users/kyaaqba/repo/iamkaram/mysite.Application/obj/Debug/net8.0/mysite.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/kyaaqba/repo/iamkaram/mysite.Application/obj/Debug/net8.0/mysite.Application.AssemblyInfoInputs.cache
+/Users/kyaaqba/repo/iamkaram/mysite.Application/obj/Debug/net8.0/mysite.Application.AssemblyInfo.cs
+/Users/kyaaqba/repo/iamkaram/mysite.Application/obj/Debug/net8.0/mysite.Application.csproj.CoreCompileInputs.cache
+/Users/kyaaqba/repo/iamkaram/mysite.Application/obj/Debug/net8.0/mysite.Application.sourcelink.json
+/Users/kyaaqba/repo/iamkaram/mysite.Application/obj/Debug/net8.0/mysite.A.2EAAD392.Up2Date
+/Users/kyaaqba/repo/iamkaram/mysite.Application/obj/Debug/net8.0/mysite.Application.dll
+/Users/kyaaqba/repo/iamkaram/mysite.Application/obj/Debug/net8.0/refint/mysite.Application.dll
+/Users/kyaaqba/repo/iamkaram/mysite.Application/obj/Debug/net8.0/mysite.Application.pdb
+/Users/kyaaqba/repo/iamkaram/mysite.Application/obj/Debug/net8.0/ref/mysite.Application.dll

@@ -1,0 +1,12 @@
+/Users/kyaaqba/repo/iamkaram/mysite.Core/bin/Debug/net8.0/mysite.Core.deps.json
+/Users/kyaaqba/repo/iamkaram/mysite.Core/bin/Debug/net8.0/mysite.Core.dll
+/Users/kyaaqba/repo/iamkaram/mysite.Core/bin/Debug/net8.0/mysite.Core.pdb
+/Users/kyaaqba/repo/iamkaram/mysite.Core/obj/Debug/net8.0/mysite.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/kyaaqba/repo/iamkaram/mysite.Core/obj/Debug/net8.0/mysite.Core.AssemblyInfoInputs.cache
+/Users/kyaaqba/repo/iamkaram/mysite.Core/obj/Debug/net8.0/mysite.Core.AssemblyInfo.cs
+/Users/kyaaqba/repo/iamkaram/mysite.Core/obj/Debug/net8.0/mysite.Core.csproj.CoreCompileInputs.cache
+/Users/kyaaqba/repo/iamkaram/mysite.Core/obj/Debug/net8.0/mysite.Core.sourcelink.json
+/Users/kyaaqba/repo/iamkaram/mysite.Core/obj/Debug/net8.0/mysite.Core.dll
+/Users/kyaaqba/repo/iamkaram/mysite.Core/obj/Debug/net8.0/refint/mysite.Core.dll
+/Users/kyaaqba/repo/iamkaram/mysite.Core/obj/Debug/net8.0/mysite.Core.pdb
+/Users/kyaaqba/repo/iamkaram/mysite.Core/obj/Debug/net8.0/ref/mysite.Core.dll
