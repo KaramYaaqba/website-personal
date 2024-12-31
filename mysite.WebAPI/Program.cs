@@ -1,7 +1,9 @@
 using Microsoft.EntityFrameworkCore;
-using mysite.Application.Data;
-using mysite.Application.Models;
 using Microsoft.AspNetCore.SpaServices;
+using mysite.Core.Interfaces;
+using mysite.Infrastructure.Repositories;
+using mysite.Application.UseCases;
+using mysite.Infrastructure.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +11,11 @@ var builder = WebApplication.CreateBuilder(args);
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddScoped<IBlogRepository, BlogRepository>();
+builder.Services.AddScoped<IProjectRepository, ProjectRepository>();
+builder.Services.AddScoped<CreateBlogUseCase>();
+builder.Services.AddScoped<CreateProjectUseCase>();
+builder.Services.AddControllers();
 builder.Services.AddSpaStaticFiles(configuration =>
 {
     configuration.RootPath = "browser";
@@ -17,11 +24,12 @@ builder.Services.AddCors(options => options.AddPolicy("CorsPolicy",
         builder => builder
         .AllowAnyMethod()
         .AllowAnyHeader()));
-builder.Services.AddDbContext<MyDbContext>(options =>
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlite("Data Source=app.db"));
 
 
 var app = builder.Build();
+app.MapControllers();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
