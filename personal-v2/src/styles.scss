@@ -1,0 +1,47 @@
+/* You can add global styles to this file, and also import other style files */
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0a192f;
+    color: #007bff;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #0a192f;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  header a {
+    color: #64ffda;
+    text-decoration: none;
+    margin-right: 1rem;
+    transition: color 0.3s;
+  }
+  
+  header a:hover {
+    color: #007bff;
+  }
+  
+  main {
+    padding-top: 80px; /* Offset for fixed header */
+  }
+  
+  .full-height {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  

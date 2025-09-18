@@ -1,0 +1,19 @@
+<div class="command-line-container">
+    <div class="command-history">
+      <div *ngFor="let entry of history">
+        <div class="command-input">> {{ entry.command }}</div>
+        <div class="command-output">{{ entry.output }}</div>
+      </div>
+    </div>
+    <div class="command-input-container">
+      <span>> </span>
+      <input
+        type="text"
+        [(ngModel)]="currentCommand"
+        (keydown.enter)="executeCommand()"
+        placeholder="Type a command"
+        autofocus
+      />
+    </div>
+  </div>
+  

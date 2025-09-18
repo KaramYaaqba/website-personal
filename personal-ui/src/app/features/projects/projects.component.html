@@ -1,0 +1,29 @@
+<div class="project-container">
+  <div *ngFor="let project of projects" class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <h3>{{ project.company }}</h3>
+        <p>{{ project.name }}</p>
+      </div>
+      <div class="flip-card-back">
+        <h3>Stack: {{ project.stack }}</h3>
+        <p>Role: {{ project.role }}</p>
+        <button mat-button (click)="openDetails(project)">Do you want to know more?</button>
+      </div>
+    </div>
+  </div>
+
+  <ng-template #projectDetails let-dialogRef="dialogRef" let-data="data">
+    <h2 mat-dialog-title>{{ data.name }}</h2>
+    <mat-dialog-content>
+      <p><strong>Company:</strong> {{ data }}</p>
+      <p><strong>Stack:</strong> {{ data }}</p>
+      <p><strong>Role:</strong> {{ data }}</p>
+      <p><strong>Business Perspective:</strong> {{ data }}</p>
+      <p><strong>Technical Perspective:</strong> {{ data }}</p>
+    </mat-dialog-content>
+    <mat-dialog-actions>
+      <button mat-button (click)="dialogRef.close()">Close</button>
+    </mat-dialog-actions>
+  </ng-template>
+</div>

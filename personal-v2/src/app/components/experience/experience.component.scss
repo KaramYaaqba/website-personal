@@ -1,0 +1,121 @@
+.experience {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    min-height: 75vh;
+  
+    .left-column,
+    .right-column {
+      flex: 1;
+      padding: 20px;
+      background-color: #f4f4f4;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+  
+    .left-column {
+      flex: 2; /* Makes it 75% of the container width */
+    }
+  
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+  
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+  
+    h3 {
+      font-size: 1.5rem;
+      margin-top: 20px;
+    }
+  
+    ul {
+      list-style: disc inside;
+      margin-top: 10px;
+  
+      li {
+        margin: 10px 0;
+      }
+    }
+  
+    /* Responsive styles for medium and small screens */
+    @media (max-width: 768px) {
+      flex-direction: column;
+  
+      .left-column,
+      .right-column {
+        flex: unset; /* Reset the flex value */
+      }
+    }
+  }
+
+  .technology-list {
+    list-style: none; /* Remove default bullets */
+    display: grid; /* Use CSS Grid for layout */
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Ensure a maximum of 5 items per row */
+    gap: 15px; /* Space between items */
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+  
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 120px; /* Adjust size */
+      height: 120px;
+  
+      img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%; /* Makes the image circular */
+        object-fit: cover; /* Ensures the image fits within the circle */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Optional shadow for aesthetics */
+      }
+    }
+  
+    /* Responsive stacking for smaller screens */
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Stacks icons based on available space */
+      justify-content: center;
+    }
+  }
+  
+  
+  .company-list {
+    list-style: none; /* Remove default bullets */
+    display: flex; /* Display items horizontally */
+    gap: 15px; /* Space between items */
+    flex-direction: column; /* Ensure horizontal layout */
+    padding: 0;
+    margin: 0;
+    justify-content: center; /* Center the entire list */
+    align-items: center; /* Center the items vertically */
+  
+    li {
+      display: flex;
+      justify-content: center; /* Center content horizontally */
+      align-items: center; /* Center content vertically */
+      width: 100px;
+      height: 100px;
+  
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Optional shadow for aesthetics */
+      }
+    }
+  
+    /* Responsive stacking for smaller screens */
+    @media (max-width: 768px) {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center;
+    }
+  }
+  

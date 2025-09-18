@@ -1,0 +1,22 @@
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  .contact-form, .resume-download {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  .contact-form form div {
+    margin-bottom: 15px;
+  }
+  
+  .resume-download button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,108 @@
+/* Overall Profile Container */
+.profile {
+  display: flex;
+  justify-content: center;
+  height: 100vh; /* Full viewport height */
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+/* Profile Container */
+.profile-container {
+  text-align: center;
+  max-width: 800px; /* Limit the width of the content */
+  padding: 16px;
+  position: relative;
+}
+
+/* Banner styling */
+.banner {
+  position: absolute;
+  left: -16px; /* Position to the left of the image */
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fffae6; /* Light yellow background */
+  writing-mode: vertical-rl; /* Rotate the text */
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 2px;
+  animation: slide-up 3s infinite; /* Slide-up animation */
+}
+
+/* Slide-up Animation */
+@keyframes slide-up {
+  0% {
+    transform: translateY(50%);
+  }
+  50% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(50%);
+  }
+}
+
+/* Button styling */
+.profile-button {
+  margin: 16px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Button as image */
+.image-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+/* Image styling */
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Hover effect */
+.image-button:hover {
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Active click effect */
+.image-button:active {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transform: scale(0.95);
+}
+
+/* Headings */
+h2 {
+  margin: 8px 0;
+  font-size: 24px;
+}
+
+h3 {
+  margin: 4px 0;
+  font-size: 18px;
+  color: #666;
+}
+
+/* Paragraph styling */
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 16px;
+  white-space: normal; /* Prevent overflow */
+  overflow: hidden; /* Hide overflow if too long */
+  text-overflow: ellipsis; /* Add ellipsis for long text */
+}

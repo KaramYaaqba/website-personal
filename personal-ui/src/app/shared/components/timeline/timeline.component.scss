@@ -1,0 +1,114 @@
+/* Base styles (desktop/large screens) */
+ol.timeline {
+  list-style-type: none;
+  padding-left: 33px;
+  margin-left: 220px;
+  box-shadow: -2px 0 0 0 #32681d; /* Left border effect */
+}
+
+.timeline .title {
+  position: absolute;
+  left: -300px;
+  top: 0;
+  width: 250px;
+  text-align: right;
+}
+
+
+
+.timeline h3 {
+  margin-bottom: 0;
+}
+
+ol.timeline > li {
+  position: relative;
+  margin-top: 1em;
+  max-width: 500px;
+}
+
+ol.timeline > li.company {
+  margin-top: 3em;
+}
+
+ol.timeline > li.current.company:before {
+  content: "";
+  position: absolute;
+  left: -45px;
+  top: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 0 0 2px #32681d, 0 4px 0 0 #fff;
+}
+
+ol.timeline > li.current.company:after {
+  content: "";
+  position: absolute;
+  left: -42px;
+  top: 3px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #32681d;
+}
+
+ol.timeline > li.company:before {
+  content: "";
+  position: absolute;
+  left: -42px;
+  top: 3px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #32681d;
+  box-shadow: 0 0 0 5px #fff;
+}
+
+ol.timeline > li.role:before {
+  content: "";
+  position: absolute;
+  left: -39px;
+  top: 3px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #32681d;
+  box-shadow: 0 0 0 2px #fff;
+}
+
+
+/* --- MEDIA QUERY FOR MEDIUM & SMALL SCREENS --- */
+@media (max-width: 768px) {
+  ol.timeline {
+    /* Remove large left margin and box-shadow; use a normal border instead */
+    margin-left: 0;
+    box-shadow: none;
+    border-left: 2px solid #32681d;
+    padding-left: 1rem; /* Adjust to taste */
+    position: relative; /* So bullet :before pseudo-elements align properly */
+  }
+
+  /* Make the timeline items flow normally */
+  ol.timeline > li {
+    margin-left: 0;
+    position: relative; /* Keep for bullet positioning */
+    max-width: 100%;    /* Let items use full width */
+  }
+
+  /* Adjust bullet positions for smaller screens */
+  ol.timeline > li.company:before,
+  ol.timeline > li.current.company:before,
+  ol.timeline > li.role:before,
+  ol.timeline > li.current.company:after {
+    left: -25px; /* Move bullet closer to the left edge */
+  }
+
+  /* Remove absolute positioning from title so it flows to the right */
+  .timeline .title {
+    position: static;
+    width: auto;
+    text-align: left;
+    margin-top: 0.5rem; /* Slight spacing */
+  }
+}

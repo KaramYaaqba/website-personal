@@ -1,0 +1,35 @@
+<div class="main-content">
+  <header>
+    <nav>
+      <div class="logo">
+        <a (click)="scrollToSection('home')">Karam Yaaqba</a>
+      </div>
+      <div class="burger-menu" (click)="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul [class.active]="menuActive" class="nav-links">
+        <li><a (click)="scrollToSection('about')">About</a></li>
+        <li><a (click)="scrollToSection('projects')">Experience</a></li>
+        <li><a (click)="scrollToSection('contact')">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="home" class="full-height">
+      <app-home></app-home>
+    </section>
+    <section id="about" class="full-height">
+      <app-about></app-about>
+    </section>
+    <section id="projects" class="full-height">
+      <app-experience></app-experience>
+    </section>
+    <section id="contact" class="full-height">
+      <app-contact></app-contact>
+    </section>
+  </main>
+  
+</div>

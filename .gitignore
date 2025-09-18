@@ -1,0 +1,111 @@
+# Root .gitignore for website-personal monorepo
+# Combines .NET (API + EF Core) and Angular frontend ignores.
+
+########################
+# .NET / C#
+########################
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Tt]est[Rr]esult*/
+[Rr]elease/
+[Dd]ebug/
+*.user
+*.userprefs
+*.suo
+*.cache
+*.pdb
+*.mdb
+*.opendb
+*.aps
+*.ncb
+*.ilk
+*.obj
+*.idb
+*.tlog
+*.log
+*.svclog
+*.sln.docstates
+
+# Build artifacts / publish
+publish/
+**/publish/
+*.zip
+
+# Resharper / Rider
+_ReSharper*/
+*.DotSettings.user
+.idea/
+
+# Visual Studio
+.vs/
+
+# EF Core Migrations design-time files
+# (Keep actual Migration .cs files)
+# SQLite / Local DB
+*.db
+*.db-journal
+
+########################
+# Angular / Node
+########################
+node_modules/
+**/node_modules/
+/dist/
+**/dist/
+/tmp/
+/out-tsc/
+/.angular/cache
+
+# Package manager logs
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Coverage / test output
+coverage/
+*.lcov
+
+# Angular cache and misc
+.sass-cache/
+/connect.lock
+/libpeerconnection.log
+testem.log
+
+########################
+# Environment & secrets
+########################
+.env
+.env.*
+!env.template
+appsettings.Development.json
+appsettings.Staging.json
+appsettings.Production.json
+appsettings.Local.json
+
+########################
+# OS / Editor
+########################
+.DS_Store
+Thumbs.db
+.history/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+########################
+# Misc
+########################
+*.swp
+*.bak
+*.tmp
+*.temp
+~$*
+
+# Ignore generated snapshot model (if any EF scaffolded)
+*ModelSnapshot.cs
+
+# Keep necessary exceptions (un-ignore if needed)
+# !mysite.Infrastructure/Migrations/*ModelSnapshot.cs

@@ -1,0 +1,87 @@
+<div class="container">
+    <!-- Left Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-space">
+      </div>
+      <div class="sidebar-space">
+      </div>
+  
+      <div class="profile">
+        <app-circular-navigation></app-circular-navigation>
+        <h2>Karam Yaaqba</h2>
+        <p>Software Engineer</p>
+        <div class="email-contact">
+          <a href="mailto:kyaaqba@gmail.com" target="_blank">
+            <img src="assets/images/email.png" alt="Link 3" />
+          </a>
+          <p>{{ email }}</p>
+        </div>
+        
+        <p>
+          <button class="resume-button" (click)="downloadResume()">
+            Download Resume
+            <img src="assets/images/cv.png" alt="Download Icon" />
+          </button>
+      </div>
+      <nav>
+        <ul>
+          <li
+            (click)="scrollToSection('about')"
+            [class.active]="activeSection === 'about'"
+          >
+            About
+          </li>
+          <li
+            (click)="scrollToSection('experience')"
+            [class.active]="activeSection === 'experience'"
+          >
+            Experience
+          </li>
+          <li
+            (click)="scrollToSection('projects')"
+            [class.active]="activeSection === 'projects'"
+          >
+            Projects
+          </li>
+        </ul>
+      </nav>
+      <div class="sidebar-space">
+      </div>
+      <div class="sidebar-space">
+        <div class="links-container">
+          <a href="https://github.com/KaramYaaqba" target="_blank">
+            <img src="assets/images/github.png" alt="Link 1" />
+          </a>
+          <a href="https://www.linkedin.com/in/karamyaaqba/" target="_blank">
+            <img src="assets/images/linkedin.png" alt="Link 2" />
+          </a>
+         <!-- <a href="mailto:kyaaqba@gmail.com" target="_blank">
+            <img src="assets/images/email.png" alt="Link 3" />
+          </a>-->
+        </div>
+        
+      </div>
+    </aside>
+  
+    <!-- Right Content -->
+    <main class="main-content">
+      <div class="sidebar-space">
+      </div>
+      <section id="about" class="section" #aboutSection>
+        <app-intro></app-intro>
+      </section>
+      <div class="sidebar-space">
+      </div>
+      <section id="experience" class="section" #experienceSection>
+        <h2>My Journey</h2>
+        <app-about></app-about>
+      </section>
+  
+      <section id="projects" class="section" #projectsSection>
+        <h2>Projects</h2>
+        <app-projects></app-projects>
+      </section>
+    </main>
+  </div>
+  <div class="spotlight" [ngStyle]="spotlightStyle"></div>
+  

@@ -1,0 +1,10 @@
+p {
+    max-width: 40vw;
+}
+
+/* For medium (tablet) screens and below */
+@media (max-width: 768px) {
+    p {
+        max-width: 80vw;
+    }
+}

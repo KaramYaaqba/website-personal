@@ -1,0 +1,8 @@
+<div class="cube" (click)="produceBalloons()"></div>
+<div class="balloon-container">
+  <div
+    *ngFor="let balloon of balloons"
+    [ngClass]="{'float': balloon.float}"
+    class="balloon"
+  ></div>
+</div>

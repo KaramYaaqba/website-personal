@@ -1,0 +1,33 @@
+/* Cube styling */
+.cube {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(to right, #ff7eb3, #ff758c);
+  transform: rotateY(45deg);
+  position: relative;
+  margin: 100px auto;
+}
+
+/* Balloon styling */
+.balloon-container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.balloon {
+  width: 30px;
+  height: 50px;
+  background: radial-gradient(circle, red, pink);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 2s ease-in;
+}
+
+/* Float animation */
+.float {
+  transform: translateX(-50%) translateY(-500px);
+}

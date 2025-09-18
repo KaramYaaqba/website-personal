@@ -1,0 +1,44 @@
+/* Home Component Styles */
+.home {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('/assets/images/desk.png'); /* Replace with the actual image path */
+    background-size: cover;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent tiling */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    margin-top: 60px;
+  }
+  
+  /* Optional overlay for better text readability */
+  .home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+  }
+  
+  .content {
+    position: relative; /* Ensure text is above the overlay */
+    z-index: 2;
+  }
+  
+  .content h1 {
+    font-size: 3rem; /* Adjust font size */
+    margin-bottom: 10px;
+  }
+  
+  .content p {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+  
